@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    background-color: #191412;
+    color: #FDFBF7;
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    antialiased: true;
+  }
+}
+
+/* Warm Luxury Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+::-webkit-scrollbar-track {
+  background: #191412;
+}
+::-webkit-scrollbar-thumb {
+  background: #3B2E28;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #5A473E;
+}
+
+/* Warm Saffron Glow Animation */
+@keyframes warm-glow {
+  0% { box-shadow: 0 0 10px rgba(245, 158, 11, 0.2); }
+  50% { box-shadow: 0 0 25px rgba(245, 158, 11, 0.45); }
+  100% { box-shadow: 0 0 10px rgba(245, 158, 11, 0.2); }
+}
+
+.glow-warm {
+  animation: warm-glow 3s ease-in-out infinite;
+}
+
+/* Subtle Indian floral background pattern */
+.bg-mandala-pattern {
+  background-color: #191412;
+  background-image: radial-gradient(#d97706 0.75px, transparent 0.75px), radial-gradient(#d97706 0.75px, #191412 0.75px);
+  background-size: 30px 30px;
+  background-position: 0 0, 15px 15px;
+  opacity: 0.98;
+}
